@@ -1,8 +1,8 @@
 import { DefaultSeoProps } from 'next-seo'
 
 export const SEO: DefaultSeoProps = {
-  titleTemplate: '%s | PancakeSwap',
-  defaultTitle: 'PancakeSwap',
+  titleTemplate: '%s | BITSCLOUD',
+  defaultTitle: 'BITSCLOUD',
   description: 'Trade, earn, and own crypto on the all-in-one multichain DEX',
   twitter: {
     cardType: 'summary_large_image',
@@ -10,7 +10,7 @@ export const SEO: DefaultSeoProps = {
     site: '@PancakeSwap',
   },
   openGraph: {
-    title: "🥞 PancakeSwap - Everyone's Favorite DEX",
+    title: "BITSCLOUD - Everyone's Favorite DEX",
     description: 'Trade, earn, and own crypto on the all-in-one multichain DEX',
     images: [{ url: 'https://assets.pancakeswap.finance/web/og/v2/hero.jpg' }],
   },

@@ -75,6 +75,10 @@
   },
   "dependencies": {
     "encoding": "^0.1.13",
+    "i": "^0.3.7",
+    "next": "14.1.2-canary.3",
+    "npm": "^10.5.0",
+    "tiny-secp256k1": "^2.2.3",
     "ws": "^8.13.0"
   },
   "pnpm": {
