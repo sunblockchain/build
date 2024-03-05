@@ -350,7 +350,7 @@ const EcoSystemSection: React.FC = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column" pt={isMobile ? '24px' : '60px'}>
-      <img src='/1.png' height="60px" width="60px" />
+      <img src='/1.png' height="60px" width="60px" alt="pictry" />
       <Text textAlign="center" p="0px 20px">
         <Text
           fontSize={['32px', null, null, '40px']}

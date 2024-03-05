@@ -26,6 +26,7 @@ module.exports = {
     "react/jsx-no-bind": 0,
     "react/no-unused-prop-types": 0,
     // Typescript
+    "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {

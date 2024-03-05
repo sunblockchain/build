@@ -1,7 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Button, Flex, Link, OpenNewIcon, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
-import useTheme from 'hooks/useTheme'
+import { Button, Flex, Link, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { ASSET_CDN } from 'config/constants/endpoints'
+import useTheme from 'hooks/useTheme'
 import React, { memo, useCallback, useLayoutEffect, useRef } from 'react'
 import { css, styled } from 'styled-components'
 import { useDrawCanvas } from '../../hooks/useDrawCanvas'
@@ -450,7 +450,7 @@ const CakeSection: React.FC = () => {
         </CakeSectionLeftBox>
         <CakeSectionCenterBox>
         <CakeBox ref={cakeBoxRef}>
-            <img src='logo.ico'/>
+            <img src='logo.ico' alt='logoshow'/>
           </CakeBox>
         </CakeSectionCenterBox>
         <CakeSectionRightBox>
