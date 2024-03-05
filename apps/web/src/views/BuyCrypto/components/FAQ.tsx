@@ -1,5 +1,5 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Card, CardHeader, Heading, CardBody, Text, LinkExternal } from '@pancakeswap/uikit'
+import { Card, CardBody, CardHeader, Heading, LinkExternal, Text } from '@pancakeswap/uikit'
 
 import FoldableText from 'components/FoldableSection/FoldableText'
 
@@ -17,7 +17,7 @@ const config = (t) => [
         )}{' '}
         <LinkExternal
           style={{ display: 'inline-flex' }}
-          href="https://docs.pancakeswap.finance/products/buy-crypto"
+          href="https://help.mercuryo.io/en/articles/6122838-on-and-off-ramps"
           showExternalIcon={false}
         >
           {t('documentation')}
@@ -40,7 +40,7 @@ const config = (t) => [
         {t('Please refer to our documentation')}{' '}
         <LinkExternal
           style={{ display: 'inline-flex' }}
-          href="https://docs.pancakeswap.finance/products/buy-crypto"
+          href="https://help.mercuryo.io/en/articles/6122838-on-and-off-ramps"
           showExternalIcon={false}
         >
           {t('here.')}

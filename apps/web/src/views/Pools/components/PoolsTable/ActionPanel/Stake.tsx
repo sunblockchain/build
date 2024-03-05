@@ -220,7 +220,7 @@ const Staked: React.FunctionComponent<React.PropsWithChildren<StackedActionProps
         <ActionTitles>
           <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
             {vaultKey === VaultKey.CakeVault || vaultKey === VaultKey.CakeFlexibleSideVault
-              ? t('Stake & Lock for veCAKE, to enjoy more rewards & benefit!')
+              ? t('Stake & Lock for BITSCLOUD or CAKE, to enjoy more rewards & benefit!')
               : t('Start staking')}
           </Text>
         </ActionTitles>

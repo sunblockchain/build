@@ -123,9 +123,9 @@ export const VeCakeBenefitCard: React.FC<{ isTableView?: boolean }> = memo(({ is
         width: isTableView ? 'fit-content' : '100%',
       }}
     >
-      <img src="/images/cake-staking/token-vecake.png" alt="token-vecake" width="38px" />
+      
       <Text color="white" bold fontSize={isMobile && isTableView ? 11 : 14}>
-        {t('Stake & Lock for veCAKE, to enjoy more rewards & benefit!')}
+        {t('Stake & Lock for veCAKE or BITSCLOUD, to enjoy more rewards & benefit!')}
       </Text>
     </ShineStyledBox>
   )
@@ -138,7 +138,7 @@ export const VeCakeCard = memo(() => {
   return (
     <Flex flexDirection="column" style={{ gap: 10 }}>
       <VeCakeBenefitCard />
-      <Text bold>{t('Explore veCAKE Benefits')}:</Text>
+      <Text bold>{t('Explore veCAKE or BITSCLOUD Benefits')}:</Text>
       <LightGreyCard style={{ padding: '8px 12px', marginBottom: 10 }}>
         <StyledFlex>
           <ImageBox>

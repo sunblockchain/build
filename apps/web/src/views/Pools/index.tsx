@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 
 import { checkIsBoostedPool } from '@pancakeswap/pools'
-import { Flex, FlexLayout, Heading, Image, Link, Loading, PageHeader, Text, ViewMode } from '@pancakeswap/uikit'
+import { Flex, FlexLayout, Heading, Link, Loading, PageHeader, Text, ViewMode } from '@pancakeswap/uikit'
 import { Pool } from '@pancakeswap/widgets-internal'
 import { useAccount } from 'wagmi'
 
@@ -55,13 +55,13 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
         <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
           <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
             <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('Syrup Pools')}
+              {t('Syrup Pools BITSCLOUD - CAKE')}
             </Heading>
             <Heading scale="md" color="text">
               {t('Just stake some tokens to earn.')}
             </Heading>
             <Heading scale="md" color="text">
-              {t('High APR, low risk.')}
+              {t('High APR, low risk with System of BITSCLOUD Connect to CAKE.')}
             </Heading>
           </Flex>
         </Flex>
@@ -76,7 +76,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
                     {t('Looking for v1 CAKE syrup pools?')}
                   </Text>
                   <FinishedTextLink
-                    href="https://v1-farms.pancakeswap.finance/pools/history"
+                    href=""
                     fontSize={['16px', null, '20px']}
                     color="failure"
                   >
@@ -147,14 +147,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
                   )}
                 </Pool.PoolsTable>
               )}
-              <Image
-                mx="auto"
-                mt="12px"
-                src="/images/decorations/3d-syrup-bunnies.png"
-                alt="Pancake illustration"
-                width={192}
-                height={184.5}
-              />
+              
             </>
           )}
         </PoolControls>

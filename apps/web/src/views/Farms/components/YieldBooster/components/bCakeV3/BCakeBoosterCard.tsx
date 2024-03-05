@@ -6,19 +6,16 @@ import {
   CardBody,
   CardFooter,
   Flex,
-  HelpIcon,
   Link,
   RocketIcon,
   Text,
   useMatchBreakpoints,
-  useTooltip,
+  useTooltip
 } from '@pancakeswap/uikit'
 import ConnectWalletButton from 'components/ConnectWalletButton'
-import Image from 'next/legacy/image'
 import NextLink from 'next/link'
 import { styled, useTheme } from 'styled-components'
 import { useAccount } from 'wagmi'
-import boosterCardImage from '../../../../images/boosterCardImage.png'
 import { useBCakeBoostLimitAndLockInfo } from '../../hooks/bCakeV3/useBCakeV3Info'
 
 export const CardWrapper = styled.div`
@@ -97,9 +94,7 @@ export const BCakeBoosterCard = () => {
   })
   return (
     <CardWrapper>
-      <ImageWrapper>
-        <Image src={boosterCardImage} alt="boosterCardImage" width={99} height={191} placeholder="blur" />
-      </ImageWrapper>
+      
       <Card p="0px" style={{ zIndex: 1 }}>
         <StyledCardBody style={{ padding: '15px 24px' }}>
           <RocketIcon />
@@ -107,9 +102,7 @@ export const BCakeBoosterCard = () => {
             {t('Yield Booster')}
           </Text>
           {tooltipVisible && tooltip}
-          <Box ref={targetRef} style={{ float: 'right', position: 'relative', top: '6px' }}>
-            <HelpIcon color={theme.colors.textSubtle} />
-          </Box>
+         
         </StyledCardBody>
         <StyledCardFooter>
           <CardContent />
@@ -132,7 +125,7 @@ const CardContent: React.FC = () => {
           {t('Connect wallet to view booster')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active veCAKE staking position is required for activating farm yield boosters.')}
+          {t('An active Your Token staking position is required for activating farm yield boosters.')}
         </Text>
         <ConnectWalletButton width="100%" style={{ backgroundColor: theme.colors.textSubtle }} />
       </Box>
@@ -144,11 +137,11 @@ const CardContent: React.FC = () => {
           {t('No CAKE locked')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active veCAKE staking position is required for activating farm yield boosters.')}
+          {t('An active Your Token staking position is required for activating farm yield boosters.')}
         </Text>
         <NextLink href="/cake-staking" passHref>
           <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
-            {t('Go to CAKE Staking')}
+            {t('Go to BITSCLOUD Staking')}
           </Button>
         </NextLink>
       </Box>
@@ -163,12 +156,12 @@ const CardContent: React.FC = () => {
       </Flex>
       <Text color="textSubtle" fontSize={12} mb="10px">
         {t(
-          'Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more CAKE or extend your lock to receive a higher boost.',
+          'Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more BITSCLOUD or extend your lock to receive a higher boost.',
         )}
       </Text>
       <NextLink href="/cake-staking" passHref>
         <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
-          {t('Go to CAKE Staking')}
+          {t('Go to BITSCLOUD Staking')}
         </Button>
       </NextLink>
     </Box>

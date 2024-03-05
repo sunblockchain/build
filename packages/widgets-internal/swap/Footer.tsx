@@ -1,7 +1,7 @@
-import { memo, ReactNode } from "react";
-import { styled } from "styled-components";
 import { useTranslation } from "@pancakeswap/localization";
-import { LinkExternal, Flex, Svg, Image, Button } from "@pancakeswap/uikit";
+import { Flex, Image, LinkExternal } from "@pancakeswap/uikit";
+import { ReactNode, memo } from "react";
+import { styled } from "styled-components";
 
 const Wrapper = styled.div<{ $isSide: boolean }>`
   width: 100%;
@@ -78,15 +78,10 @@ const Footer: React.FC<
           justifyContent={["center", "center", "center", "flex-end"]}
         >
           <BubbleWrapper>
-            <Button id="clickExchangeHelp" as="a" external href={helpUrl} variant="subtle">
-              {t("Need help ?")}
-            </Button>
-            <Svg viewBox="0 0 16 16">
-              <path d="M0 16V0C0 0 3 1 6 1C9 1 16 -2 16 3.5C16 10.5 7.5 16 0 16Z" />
-            </Svg>
+           
+            
           </BubbleWrapper>
-          {helpImage}
-        </Flex>
+          </Flex>
       )}
     </Wrapper>
   );

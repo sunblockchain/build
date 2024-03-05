@@ -99,12 +99,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <OuterWedgeWrapper>
-          <InnerWedgeWrapper top>
-            <WedgeTopLeft />
-          </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
-        <EcoSystemSection />
+   
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

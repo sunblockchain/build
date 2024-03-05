@@ -1,22 +1,22 @@
 import { ContextApi } from '@pancakeswap/localization'
 import { SUPPORTED_CHAIN_IDS as POOL_SUPPORTED_CHAINS } from '@pancakeswap/pools'
 import {
-  DropdownMenuItems,
-  EarnFillIcon,
-  EarnIcon,
-  MenuItemsType,
-  MoreIcon,
-  NftFillIcon,
-  NftIcon,
-  SwapFillIcon,
-  SwapIcon
+    DropdownMenuItems,
+    EarnFillIcon,
+    EarnIcon,
+    MenuItemsType,
+    MoreIcon,
+    NftFillIcon,
+    NftIcon,
+    SwapFillIcon,
+    SwapIcon
 } from '@pancakeswap/uikit'
 import {
-  FIXED_STAKING_SUPPORTED_CHAINS,
-  LIQUID_STAKING_SUPPORTED_CHAINS,
-  SUPPORT_BUY_CRYPTO,
-  SUPPORT_FARMS,
-  SUPPORT_ONLY_BSC
+    FIXED_STAKING_SUPPORTED_CHAINS,
+    LIQUID_STAKING_SUPPORTED_CHAINS,
+    SUPPORT_BUY_CRYPTO,
+    SUPPORT_FARMS,
+    SUPPORT_ONLY_BSC
 } from 'config/constants/supportChains'
 import { nftsBaseUrl } from 'views/Nft/market/constants'
 
@@ -86,11 +86,11 @@ const config: (
           href: '/buy-crypto',
           supportChainIds: SUPPORT_BUY_CRYPTO,
         },
-       /* {
+        {
           label: t('Trading Reward'),
           href: '/trading-reward',
           hideSubNav: true,
-        },*/
+        },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
@@ -233,7 +233,8 @@ const config: (
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },*/
       ].map((item) => addMenuItemSupported(item, chainId)),
-    },
+    }, 
+    
   ].map((item) => addMenuItemSupported(item, chainId))
 
 export default config

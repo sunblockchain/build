@@ -538,7 +538,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
                     external
                     color="failure"
                     fontSize={['16px', null, '20px']}
-                    href="https://v1-farms.pancakeswap.finance/farms/history"
+                    href=" "
                   >
                     {t('check out v1 farms')}.
                   </FinishedTextLink>
@@ -572,7 +572,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
           </Flex>
         )}
         {chosenFarms.length > 0 && <div ref={observerRef} />}
-        <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
+        
         <V3SubgraphHealthIndicator />
       </Page>
     </FarmsV3Context.Provider>

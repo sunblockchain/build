@@ -10,7 +10,6 @@ import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import { styled } from 'styled-components'
 import { getPerpetualUrl } from 'utils/getPerpetualUrl'
-import GradientLogo from '../GradientLogoSvg'
 
 export const CardWrapper = styled.div`
   border-radius: 24px;
@@ -224,7 +223,7 @@ const useEarnBlockData = () => {
     return [
       {
         title: t('Farm'),
-        description: t('Stake LP tokens, harvest CAKE'),
+        description: t('Stake LP tokens, harvest CAKE or BITSCLOUD'),
         ctaTitle: t('Stake Now'),
         image: `${ASSET_CDN}/web/landing/earn-farm.png`,
         defaultImage: `${ASSET_CDN}/web/landing/earn-farm-purple.png`,
@@ -232,7 +231,7 @@ const useEarnBlockData = () => {
       },
       {
         title: t('Pools'),
-        description: t('Stake CAKE, earn various rewards'),
+        description: t('Stake CAKE or BITSCLOUD, earn various rewards'),
         ctaTitle: t('Stake Now'),
         image: `${ASSET_CDN}/web/landing/earn-pools.png`,
         defaultImage: `${ASSET_CDN}/web/landing/earn-pools-purple.png`,
@@ -256,7 +255,7 @@ const useEarnBlockData = () => {
       },
       {
         title: t('Position Manager'),
-        description: t('Automate your PancakeSwap v3 liquidity'),
+        description: t('Automate your BITSCLOUD v3 liquidity'),
         ctaTitle: t('Stake Now'),
         image: `${ASSET_CDN}/web/landing/earn-pm.png`,
         defaultImage: `${ASSET_CDN}/web/landing/earn-pm-purple.png`,
