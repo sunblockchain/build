@@ -1,15 +1,11 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Box, Card, CardBody, CardHeader, Flex, Heading, Link, Text } from '@pancakeswap/uikit'
+import { Box, Card, CardBody, CardHeader, Flex, Heading, Text } from '@pancakeswap/uikit'
 import FoldableText from 'components/FoldableSection/FoldableText'
 import { styled } from 'styled-components'
 
 const StyledCard = styled(Card)`
   flex: 1;
   height: fit-content;
-`
-
-const InlineLink = styled(Link)`
-  display: inline;
 `
 
 const List = styled.ul`

@@ -319,8 +319,8 @@ const FeatureBox: React.FC<{
       onClick={onClick ? () => onClick() : () => path && push(path)}
     >
       <ImageBox>
-        <Image className="default" src={defaultImage} width={108} height={108} alt={title} unoptimized />
-        <Image className="hover" src={image} width={108} height={108} alt={title} unoptimized />
+        <Image className="default" src={defaultImage} width={108} height={108} alt={title} />
+        <Image className="hover" src={image} width={108} height={108} alt={title}  />
       </ImageBox>
       <Box>
         <Text fontSize="20px" mb="8px" lineHeight="110%" fontWeight={600} color={theme.colors.text}>
@@ -345,12 +345,11 @@ const EcoSystemSection: React.FC = () => {
   const { theme } = useTheme()
   const tradeBlockData = useTradeBlockData()
   const earnBlockData = useEarnBlockData()
-  const nftGameBlockData = useNftGameBlockData()
   const { isMobile, isMd } = useMatchBreakpoints()
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column" pt={isMobile ? '24px' : '60px'}>
-      <img src='/1.png' height="60px" width="60px" alt="pictry" />
+      <img src='/1.png' height="60px" width="60px" alt="" />
       <Text textAlign="center" p="0px 20px">
         <Text
           fontSize={['32px', null, null, '40px']}

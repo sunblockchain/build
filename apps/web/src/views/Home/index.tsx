@@ -5,7 +5,6 @@ import { styled } from 'styled-components'
 import CakeDataRow from './components/CakeDataRow'
 import CakeSection from './components/CakeSection'
 import { RightTopBox } from './components/CommunitySection/ImagesOnBg'
-import EcoSystemSection from './components/EcoSystemSection'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
 import MetricsSection from './components/MetricsSection'
@@ -14,8 +13,7 @@ import {
   InnerWedgeWrapper,
   OuterWedgeWrapper,
   WedgeBottomRight,
-  WedgeTopLeft,
-  WedgeTopRight,
+  WedgeTopRight
 } from './components/WedgeSvgs'
 
 const StyledHeroSection = styled(PageSection)`

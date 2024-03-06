@@ -27,9 +27,7 @@ import { useCurrentFarmAuction } from './hooks/useCurrentFarmAuction'
 const FAQS_BG_LIGHT = 'linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)'
 const FAQ_BG_DARK = 'linear-gradient(180deg, #434575 0%, #66578D 100%)'
 const CAKE_BURN_BG_LIGHT = 'radial-gradient(50% 79.31% at 50% 50%, #FAF9FA 0%, #EAECF4 100%)'
-const CAKE_BURN_TOP_FILL_LIGHT = 'radial-gradient(ellipse at bottom, #f0f1f6, #EAECF4)'
 const CAKE_BURN_BG_DARK = 'radial-gradient(103.12% 50% at 50% 50%, #152534 0%, #191326 100%)'
-const CAKE_BURN_TOP_FILL_DARK = '#191326'
 
 const StyledHeader = styled(PageHeader)`
   max-height: max-content;
@@ -46,24 +44,6 @@ const Left = styled(Flex)`
   flex: 1;
 `
 
-const Right = styled(Flex)`
-  align-items: center;
-  justify-content: center;
-  flex: 0.5;
-  & img {
-    height: 50%;
-    width: 50%;
-    max-height: 330px;
-    margin-top: 24px;
-  }
-
-  ${({ theme }) => theme.mediaQueries.sm} {
-    & img {
-      height: auto;
-      width: auto;
-    }
-  }
-`
 
 const AuctionContainer = styled(Flex)`
   width: 100%;

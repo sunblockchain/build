@@ -1,3 +1,4 @@
+import { ChainId } from '@pancakeswap/chains'
 import {
   DeserializedFarm,
   FarmV3DataWithPriceAndUserInfo,
@@ -8,7 +9,6 @@ import {
 } from '@pancakeswap/farms'
 import { useIntersectionObserver } from '@pancakeswap/hooks'
 import { useTranslation } from '@pancakeswap/localization'
-import { ChainId } from '@pancakeswap/chains'
 import {
   ArrowForwardIcon,
   Box,
@@ -16,7 +16,6 @@ import {
   Flex,
   FlexLayout,
   Heading,
-  Image,
   Link,
   Loading,
   OptionProps,
@@ -25,29 +24,29 @@ import {
   Select,
   Text,
   Toggle,
-  ToggleView,
+  ToggleView
 } from '@pancakeswap/uikit'
 
+import { BIG_ONE, BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import { FarmWidget, NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import BigNumber from 'bignumber.js'
 import Page from 'components/Layout/Page'
+import { V3SubgraphHealthIndicator } from 'components/SubgraphHealthIndicator'
+import { V3_MIGRATION_SUPPORTED_CHAINS } from 'config/constants/supportChains'
 import { useActiveChainId } from 'hooks/useActiveChainId'
+import { useCakePrice } from 'hooks/useCakePrice'
 import orderBy from 'lodash/orderBy'
 import { useRouter } from 'next/router'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useFarms, usePollFarmsWithUserData } from 'state/farms/hooks'
-import { useCakePrice } from 'hooks/useCakePrice'
 import { useFarmsV3WithPositionsAndBooster } from 'state/farmsV3/hooks'
 import { useCakeVaultUserData } from 'state/pools/hooks'
 import { ViewMode } from 'state/user/actions'
 import { useUserFarmStakedOnly, useUserFarmsViewMode } from 'state/user/hooks'
 import { styled } from 'styled-components'
 import { getFarmApr } from 'utils/apr'
-import { V3_MIGRATION_SUPPORTED_CHAINS } from 'config/constants/supportChains'
 import { getStakedFarms } from 'views/Farms/utils/getStakedFarms'
-import { V3SubgraphHealthIndicator } from 'components/SubgraphHealthIndicator'
 import { useAccount } from 'wagmi'
-import { BIG_ONE, BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import Table from './components/FarmTable/FarmTable'
 import { FarmTypesFilter } from './components/FarmTypesFilter'
 import { BCakeBoosterCard } from './components/YieldBooster/components/bCakeV3/BCakeBoosterCard'
@@ -143,11 +142,6 @@ const ViewControls = styled.div`
   }
 `
 
-const StyledImage = styled(Image)`
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 58px;
-`
 
 const FinishedTextContainer = styled(Flex)`
   flex-direction: column;

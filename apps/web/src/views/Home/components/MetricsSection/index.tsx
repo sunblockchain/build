@@ -1,7 +1,6 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { useQuery } from '@tanstack/react-query'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { styled } from 'styled-components'
 import { ChainTags } from './ChainTags'
@@ -26,15 +25,6 @@ const BnbBallRocket = styled.div`
   ${({ theme }) => theme.mediaQueries.xxl} {
     bottom: 151px;
     left: 20px;
-  }
-`
-const EthBallRocket = styled.div`
-  position: absolute;
-  right: 0;
-  top: 81px;
-  ${({ theme }) => theme.mediaQueries.xxl} {
-    right: 0;
-    bottom: -30px;
   }
 `
 

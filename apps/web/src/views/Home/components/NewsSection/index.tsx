@@ -1,8 +1,8 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { ChevronLeftIcon, ChevronRightIcon, Flex, Text } from '@pancakeswap/uikit'
+import { Flex, Text } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
+import { useRef } from 'react'
 import { styled } from 'styled-components'
-import { useRef, useCallback } from 'react'
 import { useAllNewsArticle } from '../../hooks/useAllArticle'
 
 const NewsCard = styled.div`
@@ -72,34 +72,12 @@ const CardWrapper = styled.div`
     scrollbar-width: none; /* Firefox */
   }
 `
-const ArrowButton = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 16px;
-  border: 2px solid ${({ theme }) => theme.colors.primary};
-  svg path {
-    fill: ${({ theme }) => theme.colors.primary};
-  }
-  cursor: pointer;
-`
 
 export const NewsSection: React.FC = () => {
   const { theme } = useTheme()
   const { t } = useTranslation()
   const scrollWrapper = useRef<HTMLDivElement>(null)
   const { articlesData, isFetching } = useAllNewsArticle()
-  const onButtonClick = useCallback((scrollTo: 'next' | 'pre') => {
-    const scrollTarget = scrollWrapper.current
-    if (!scrollTarget) return
-    if (scrollTo === 'next') {
-      scrollTarget.scrollLeft += 280
-      return
-    }
-    scrollTarget.scrollLeft -= 280
-  }, [])
   return (
     <Flex flexDirection="column" style={{ gap: 36 }}>
       <Flex justifyContent="center" style={{ gap: 8 }}>

@@ -83,12 +83,11 @@ export const useBCakeTooltipContent = () => {
 
 export const BCakeBoosterCard = () => {
   const { t } = useTranslation()
-  const theme = useTheme()
   const { isMobile } = useMatchBreakpoints()
 
   const tooltipContent = useBCakeTooltipContent()
 
-  const { targetRef, tooltip, tooltipVisible } = useTooltip(tooltipContent, {
+  const { tooltip, tooltipVisible } = useTooltip(tooltipContent, {
     placement: 'bottom-start',
     ...(isMobile && { hideTimeout: 1500 }),
   })
