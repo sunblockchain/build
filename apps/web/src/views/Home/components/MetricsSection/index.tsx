@@ -90,7 +90,7 @@ const Stats = () => {
       <ImageLayer>
         <BnbBallRocket>
           <Image
-            src={`/2.png`}
+            src='/2.png'
             alt="bnbBallRocket"
             width={144}
             height={168}
@@ -100,7 +100,7 @@ const Stats = () => {
         
         <AptosBallRocket>
           <Image
-            src={`/3.png`}
+            src='/3.png'
             alt="aptosBallRocket"
             width={isXxl ? 84 : 53}
             height={isXxl ? 101 : 64}

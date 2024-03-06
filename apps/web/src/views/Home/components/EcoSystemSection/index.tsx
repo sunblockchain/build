@@ -266,39 +266,6 @@ const useEarnBlockData = () => {
   }, [t])
 }
 
-const useNftGameBlockData = () => {
-  const { t } = useTranslation()
-  return useMemo(() => {
-    return [
-      {
-        title: t('Gaming Marketplace'),
-        description: t('Play, Build and Connect on PancakeSwap'),
-        ctaTitle: t('Play Now'),
-        image: `${ASSET_CDN}/web/landing/game-pancake-protectors.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/game-pancake-protectors-purple.png`,
-        path: 'https://pancakeswap.games/',
-      },
-      {
-        title: t('Prediction'),
-        description: t('Forecast token prices within minutes'),
-        ctaTitle: t('Try Now'),
-        image: `${ASSET_CDN}/web/landing/game-prediction.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/game-prediction-purple.png`,
-        path: '/prediction',
-      },
-      {
-        title: t('NFT Marketplace'),
-        description: t('Trade unique NFTs on BNB Chain'),
-        ctaTitle: t('Trade Now'),
-        image: `${ASSET_CDN}/web/landing/nft-marketplace.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/nft-marketplace-purple.png`,
-        path: '/nfts',
-        className: 'adjust-height',
-      },
-    ]
-  }, [t])
-}
-
 const FeatureBox: React.FC<{
   title: string
   description: string

@@ -1,7 +1,7 @@
+import { ChainId } from '@pancakeswap/chains'
 import { DeserializedFarm, FarmWithStakedValue, filterFarmsByQuery } from '@pancakeswap/farms'
 import { useIntersectionObserver } from '@pancakeswap/hooks'
 import { useTranslation } from '@pancakeswap/localization'
-import { ChainId } from '@pancakeswap/chains'
 import {
   ArrowForwardIcon,
   Box,
@@ -9,7 +9,6 @@ import {
   Flex,
   FlexLayout,
   Heading,
-  Image,
   Link,
   Loading,
   OptionProps,
@@ -18,25 +17,25 @@ import {
   Select,
   Text,
   Toggle,
-  ToggleView,
+  ToggleView
 } from '@pancakeswap/uikit'
 
 import { FarmWidget, NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import BigNumber from 'bignumber.js'
 import Page from 'components/Layout/Page'
 import { useActiveChainId } from 'hooks/useActiveChainId'
+import { useCakePrice } from 'hooks/useCakePrice'
 import orderBy from 'lodash/orderBy'
 import { useRouter } from 'next/router'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useFarms, usePollFarmsWithUserData } from 'state/farms/hooks'
-import { useCakePrice } from 'hooks/useCakePrice'
 import { useCakeVaultUserData } from 'state/pools/hooks'
 import { ViewMode } from 'state/user/actions'
 import { useUserFarmStakedOnly, useUserFarmsViewMode } from 'state/user/hooks'
 import { styled } from 'styled-components'
 import { getFarmApr } from 'utils/apr'
-import { useAccount } from 'wagmi'
 import { getStakedMinProgramFarms } from 'views/Farms/utils/getStakedMinProgramFarms'
+import { useAccount } from 'wagmi'
 
 import { V2Farm } from './FarmsV3'
 import Table from './components/FarmTable/FarmTable'
@@ -132,12 +131,6 @@ const ViewControls = styled.div`
       padding: 0;
     }
   }
-`
-
-const StyledImage = styled(Image)`
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 58px;
 `
 
 const FinishedTextContainer = styled(Flex)`

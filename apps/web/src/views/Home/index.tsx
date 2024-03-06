@@ -89,17 +89,6 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         <MetricsSection />
       </PageSection>
       <PageSection
-        innerProps={{ style: { ...HomeSectionContainerStyles, maxWidth: 'auto' } }}
-        background={theme.colors.background}
-        containerProps={{
-          id: 'home-4',
-        }}
-        index={2}
-        hasCurvedDivider={false}
-      >
-   
-      </PageSection>
-      <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         containerProps={{
