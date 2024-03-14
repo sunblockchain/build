@@ -1,12 +1,8 @@
-# 🥞 Pancake Frontend
+# BITSCLOUD DEFI
 
-<p align="center">
-  <a href="https://pancakeswap.finance">
-      <img src="https://pancakeswap.finance/logo.png" height="128">
-  </a>
-</p>
 
-This project contains the main features of the pancake application.
+
+This project contains the main features of the Bitscloud application.
 
 If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
 
