@@ -1,10 +1,10 @@
-import { useMemo } from 'react'
+import { ChainId } from '@pancakeswap/chains'
+import { languageList, useTranslation } from '@pancakeswap/localization'
 import { footerLinks } from '@pancakeswap/uikit'
 import Footer from '@pancakeswap/uikit/components/Footer'
-import { languageList, useTranslation } from '@pancakeswap/localization'
-import { useTheme } from 'next-themes'
-import { ChainId } from '@pancakeswap/chains'
 import { useCakePrice } from 'hooks/useCakePrice'
+import { useTheme } from 'next-themes'
+import { useMemo } from 'react'
 
 const FooterPage = () => {
   const { setTheme, resolvedTheme } = useTheme()
@@ -32,7 +32,7 @@ const FooterPage = () => {
       currentLang={currentLanguage.code}
       cakePriceUsd={cakePrice ? Number(cakePrice) : undefined}
       buyCakeLabel={t('Buy CAKE')}
-      buyCakeLink="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+      buyCakeLink="/swap?outputCurrency=0x228e2A0011662AE5A7176B279F590b2A58116DEF&chainId=56"
     />
   )
 }

@@ -26,7 +26,7 @@ export const PageHead = () => {
         <Heading />
         <Description />
         <NextLinkFromReactRouter
-          to="/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+          to="/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x228e2A0011662AE5A7176B279F590b2A58116DEF"
           prefetch={false}
         >
           <Button p="0" variant="text" mt="4px">

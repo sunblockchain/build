@@ -3,13 +3,13 @@
  */
 const tokens = {
   cake: {
-    symbol: "CAKE",
+    symbol: "CBL",
     address: {
-      56: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      56: "0x228e2A0011662AE5A7176B279F590b2A58116DEF",
       97: "0xFa60D973F7642B748046464e165A65B7323b0DEE",
     },
     decimals: 18,
-    projectLink: "https://pancakeswap.finance/",
+    projectLink: "https://cyberliness.com/",
   },
   txl: {
     symbol: "TXL",

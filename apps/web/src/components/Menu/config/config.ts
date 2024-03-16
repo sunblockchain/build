@@ -5,18 +5,17 @@ import {
   EarnFillIcon,
   EarnIcon,
   MenuItemsType,
-  MoreIcon,
   NftFillIcon,
   NftIcon,
   SwapFillIcon,
-  SwapIcon
+  SwapIcon,
 } from '@pancakeswap/uikit'
 import {
   FIXED_STAKING_SUPPORTED_CHAINS,
   LIQUID_STAKING_SUPPORTED_CHAINS,
   SUPPORT_BUY_CRYPTO,
   SUPPORT_FARMS,
-  SUPPORT_ONLY_BSC
+  SUPPORT_ONLY_BSC,
 } from 'config/constants/supportChains'
 import { nftsBaseUrl } from 'views/Nft/market/constants'
 
@@ -60,7 +59,7 @@ const config: (
           label: t('Liquidity'),
           href: '/liquidity',
         },
-       
+
         {
           label: `${t('Limit')} (V2)`,
           href: '/limit-orders',
@@ -71,11 +70,6 @@ const config: (
           label: t('Buy Crypto'),
           href: '/buy-crypto',
           supportChainIds: SUPPORT_BUY_CRYPTO,
-        },
-        {
-          label: t('Trading Reward'),
-          href: '/trading-reward',
-          hideSubNav: true,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
@@ -92,13 +86,13 @@ const config: (
           href: '/farms',
           supportChainIds: SUPPORT_FARMS,
         },
-        
+
         {
           label: t('Pools'),
           href: '/pools',
           supportChainIds: POOL_SUPPORTED_CHAINS,
         },
-    
+
         {
           label: t('Liquid Staking'),
           href: '/liquid-staking',
@@ -134,16 +128,6 @@ const config: (
         },
       ],
     },
-    {
-      label: '',
-      href: '/info',
-      icon: MoreIcon,
-      hideSubNav: true,
-      items: [
-    
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    }, 
-    
   ].map((item) => addMenuItemSupported(item, chainId))
 
 export default config

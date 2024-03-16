@@ -51,12 +51,12 @@
       "logoURI": "https://tokens.pancakeswap.finance/images/symbol/usdt.png"
     },
     {
-      "name": "PancakeSwap Token",
-      "symbol": "CAKE",
-      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "name": "Cyberliness",
+      "symbol": "CBL",
+      "address": "0x228e2A0011662AE5A7176B279F590b2A58116DEF",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
+      "logoURI": "https://cyberliness.com/0x228e2A0011662AE5A7176B279F590b2A58116DEF.png"
     },
     {
       "name": "PancakeSwap Token",

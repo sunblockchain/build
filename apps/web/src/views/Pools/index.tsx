@@ -61,7 +61,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
               {t('Just stake some tokens to earn.')}
             </Heading>
             <Heading scale="md" color="text">
-              {t('High APR, low risk with System of BITSCLOUD Connect to CAKE.')}
+              {t('High APR')}
             </Heading>
           </Flex>
         </Flex>
@@ -75,11 +75,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
                   <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
                     {t('Looking for v1 CAKE syrup pools?')}
                   </Text>
-                  <FinishedTextLink
-                    href=""
-                    fontSize={['16px', null, '20px']}
-                    color="failure"
-                  >
+                  <FinishedTextLink href="" fontSize={['16px', null, '20px']} color="failure">
                     {t('Go to migration page')}.
                   </FinishedTextLink>
                 </FinishedTextContainer>
@@ -147,7 +143,6 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
                   )}
                 </Pool.PoolsTable>
               )}
-              
             </>
           )}
         </PoolControls>

@@ -56,7 +56,7 @@ export default function CommonBases({
 }) {
   const native = useNativeCurrency()
   const { t } = useTranslation()
-  const pinTokenDescText = commonBasesType === CommonBasesType.SWAP_LIMITORDER ? t('Common tokens') : t('Common bases')
+  const pinTokenDescText = commonBasesType === CommonBasesType.SWAP_LIMITORDER ? t('Base Currency') : t('Common bases')
 
   return (
     <AutoColumn gap="md">

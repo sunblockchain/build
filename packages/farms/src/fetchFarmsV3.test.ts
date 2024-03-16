@@ -101,14 +101,14 @@ describe('fetchFarmsV3', () => {
           "pid": 1,
           "poolWeight": "",
           "quoteToken": ERC20Token {
-            "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+            "address": "0x228e2A0011662AE5A7176B279F590b2A58116DEF",
             "chainId": 56,
             "decimals": 18,
             "isNative": false,
             "isToken": true,
             "name": "PancakeSwap Token",
-            "projectLink": "https://pancakeswap.finance/",
-            "symbol": "CAKE",
+            "projectLink": "https://defi.bitscloud.co/",
+            "symbol": "CBL",
           },
           "quoteTokenPriceBusd": "40",
           "token": ERC20Token {

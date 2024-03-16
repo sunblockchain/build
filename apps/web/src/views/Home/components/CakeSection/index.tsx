@@ -282,15 +282,24 @@ export const CakeSectionCenterBox = styled.div`
 
 const CakeBox = styled.div`
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   overflow: hidden;
   ${({ theme }) => theme.mediaQueries.lg} {
     width: 330px;
     height: 360px;
   }
 `
-
+const CakeCanvas = styled.canvas`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.65);
+  ${({ theme }) => theme.mediaQueries.lg} {
+    transform: translate(-50%, -52%) scale(0.75);
+  }
+  background-color: transparent;
+`
 const width = 900
 const height = 900
 
@@ -419,7 +428,6 @@ const CakeSection: React.FC = () => {
         <Link href="https://bitscloud.co">
           <Button variant="primary">{t('Join Us')}</Button>
         </Link>
-
       </Flex>
       <CakeSectionMainBox>
         <CakeLeftLine ref={leftLineRef} className={played?.current ? 'show' : ''} />
@@ -439,8 +447,9 @@ const CakeSection: React.FC = () => {
           </CakeLeftBorderBox>
         </CakeSectionLeftBox>
         <CakeSectionCenterBox>
-        <CakeBox ref={cakeBoxRef}>
-            <img src='logo.ico' alt='logoshow'/>
+          <CakeBox ref={cakeBoxRef}>
+            <img src="logo.ico" alt="iconslide" />
+            <CakeCanvas ref={canvasRef} />
           </CakeBox>
         </CakeSectionCenterBox>
         <CakeSectionRightBox>
