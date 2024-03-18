@@ -84,7 +84,7 @@ const TabContainer = ({ children, docLink, docText }: PropsWithChildren<{ docLin
       <AtomBox position="absolute" style={{ top: '-50px' }}>
         <TabMenu activeIndex={index} onItemClick={setIndex} gap="0px" isColorInverse isShowBorderBottom={false}>
           <Tab>{t('Connect Wallet')}</Tab>
-          <Tab>{t('What’s a Web3 Wallet?')}</Tab>
+          <Tab>{t('BITSCLOUD Web3 Wallet')}</Tab>
         </TabMenu>
       </AtomBox>
       <AtomBox
@@ -151,9 +151,7 @@ function MobileModal<T>({
         </AtomBox>
       ) : (
         <Text color="textSubtle" small p="24px">
-          {t(
-            'Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase securely. Never share them with anyone.',
-          )}
+          {t('Choice to connect to your wallets below. Keep safe with your private key.')}
         </Text>
       )}
       <AtomBox flex={1} py="16px" style={{ maxHeight: '230px' }} overflow="auto">
@@ -332,9 +330,7 @@ function DesktopModal<T>({
             {t('Connect Wallet')}
           </Heading>
           <Text color="textSubtle" small pt="24px" pb="32px">
-            {t(
-              'Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase securely. Never share them with anyone.',
-            )}
+            {t('Choice to connect to the wallets list below. Keep your private key safe .')}
           </Text>
         </AtomBox>
         <WalletSelect
@@ -460,7 +456,7 @@ const Intro = ({ docLink, docText }: { docLink: string; docText: string }) => {
       <Heading as="h1" fontSize="20px" color="secondary">
         {t('Haven’t got a wallet yet?')}
       </Heading>
-      <Image src="https://cdn.pancakeswap.com/wallets/wallet_intro.png" width={198} height={178} />
+      <Image src="/Bank.png" width={198} height={178} />
       <Button as={LinkExternal} color="backgroundAlt" variant="subtle" href={docLink}>
         {docText}
       </Button>

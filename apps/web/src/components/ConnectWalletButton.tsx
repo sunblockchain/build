@@ -49,7 +49,7 @@ const ConnectWalletButton = ({ children, ...props }: ButtonProps) => {
         }
       `}</style>
       <WalletModalV2
-        docText={t('Learn How to Connect')}
+        docText={t('Check BITSCLOUD Wallet')}
         docLink={docLink}
         isOpen={open}
         wallets={wallets}
